@@ -1,0 +1,27 @@
+#togglePage {
+    background: linear-gradient(to bottom, #1f4037, #99f2c8);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#togglePage:hover {
+    background: linear-gradient(to bottom, #366e5f, #aeffd9);
+}
+
+#togglePage:focus {
+    outline: none;
+}
+
+@media (min-width: 1200px) {
+    .outer-wrapper {
+        box-shadow: 0px 0px 8px #333;
+        max-width: 1140px;
+        margin: 50px auto;
+        min-height: 85vh;
+        width: 100%;
+    }
+}
