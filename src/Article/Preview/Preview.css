@@ -2,6 +2,10 @@
     max-width: 100%;
 }
 
+.fade-in {
+    animation: fadeIn .6s;
+}
+
 .thumbnail-container {
     display: flex;
     flex-direction: column-reverse;
@@ -45,4 +49,13 @@
         justify-content: space-between;
     }
     
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

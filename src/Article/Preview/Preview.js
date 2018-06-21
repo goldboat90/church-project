@@ -16,7 +16,11 @@ class Preview extends Component {
         this.switchInformation = this.switchInformation.bind(this);
     }
     switchInformation(title, caption, e) {
-        // Switches out image preview information
+        document.getElementById("main_img").classList.add("fade-in");
+        setTimeout(function() {
+            document.getElementById("main_img").classList.remove("fade-in");
+        }, 600);
+        // Switch out image preview information
         this.setState({
             selectedImg: e.target.src,
             imageTitle: title,
@@ -28,7 +32,7 @@ class Preview extends Component {
         return (
             <Fragment>
             <div className="col-12 col-md-11">
-                <img src={this.state.selectedImg} alt={this.state.imageAltAttribute} className="preview-img" />
+                <img id="main_img" src={this.state.selectedImg} alt={this.state.imageAltAttribute} className="preview-img" />
             </div>
             <div className="col-12 col-md-11 thumbnail-container">
                 <div className="thumbnail-title-container">
